@@ -27,6 +27,10 @@ function installUpdateZshCompletion() {
 	fi
 }
 
+function installUpdateNvm() {
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+}
+
 function installFiles() {
 	rsync --exclude ".git/" \
 		--exclude ".gitignore" \
@@ -51,9 +55,11 @@ else
 		installUpdateVundle;
 		installUpdateTpm
 		installUpdateZshCompletion;
+    installUpdateNvm;
 	fi;
 fi;
 unset installFiles;
 unset installUpdateVundle;
 unset installUpdateTpm;
 unset installUpdateCompletion;
+unset installUpdateNvm;
