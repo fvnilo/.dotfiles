@@ -53,6 +53,7 @@ brew install kubectx
 # Useful terminal tools
 brew install jq
 brew install watch
+brew install tldr
 
 # -------------------------------
 # Casks
