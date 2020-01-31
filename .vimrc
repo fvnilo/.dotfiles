@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'stephpy/vim-yaml'
 Plugin 'junegunn/fzf.vim'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 filetype plugin indent on
@@ -63,8 +64,12 @@ set completeopt=menu
 "" Thanks to: https://github.com/floranf/"
 map <F2> :%!python -mjson.tool<CR>
 
+" Toggle NERDTree with Ctrl+n
 map <C-n> :NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Toggle Tagbar with F8
+nmap <F8> :TagbarToggle<CR>
 
 " vim-go goodies
 let g:go_fmt_command = "goimports"    " Run goimports along gofmt on each save     
