@@ -54,7 +54,7 @@ au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
 "" Color scheme
-colorscheme zenburn 
+colorscheme desertink 
 set t_Co=256
 
 "" Disable (vim-go) Omnicomplete extra buffer
