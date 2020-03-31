@@ -84,7 +84,6 @@ autoload -U compinit && compinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $(brew --prefix autoenv)/activate.sh
 
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin

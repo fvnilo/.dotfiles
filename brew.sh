@@ -35,7 +35,6 @@ brew install curl
 brew install vim
 brew install grep
 brew install openssh
-brew install autoenv
 
 # Install other useful binaries.
 brew install git
