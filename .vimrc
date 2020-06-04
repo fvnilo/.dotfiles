@@ -78,8 +78,8 @@ let g:airline_powerline_fonts = 1
 
 " fzf
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
-nmap ; :Buffers<CR>
-nmap <Leader>t :Files<CR>
+nmap <Leader><space> :Files<CR>
+nmap <Leader>b :Buffers<CR>
 nmap <Leader>f :Ag<CR>
 
 " Disable arrows
