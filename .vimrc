@@ -5,6 +5,7 @@ set backspace=indent,eol,start
 set encoding=utf-8 " encoding
 set clipboard=unnamed " use system clipboard
 set nocompatible
+
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,21 +17,20 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'fatih/vim-go'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
 Plugin 'stephpy/vim-yaml'
 Plugin 'junegunn/fzf.vim'
 Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 filetype plugin indent on
+
 " On pressing tab, insert 2 spaces
 set expandtab
+
 " show existing tab with 2 spaces width
 set tabstop=2
 set softtabstop=2
@@ -54,21 +54,18 @@ au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
 "" Color scheme
-colorscheme desertink 
+colorscheme Tomorrow-Night
 set t_Co=256
 
 "" Disable (vim-go) Omnicomplete extra buffer
 set completeopt=menu
+map <Space> <Leader>
 
 " Map F2 to Format JSON files
 "" Thanks to: https://github.com/floranf/"
 map <F2> :%!python -mjson.tool<CR>
 
-" Toggle NERDTree with Ctrl+n
-map <C-n> :NERDTreeTabsToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" Toggle Tagbar with F8
+" Toggle Tagbar
 nmap <F8> :TagbarToggle<CR>
 
 " vim-go goodies
@@ -79,10 +76,11 @@ let g:go_auto_type_info = 1           " Automatically get signature/type info fo
 let g:airline_theme='zenburn'
 let g:airline_powerline_fonts = 1
 
-" fzf. Note: leader is `\`
+" fzf
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 nmap ; :Buffers<CR>
 nmap <Leader>t :Files<CR>
-nmap <Leader>r :Tags<CR>
+nmap <Leader>f :Ag<CR>
 
 " Disable arrows
 noremap <Up> <Nop>

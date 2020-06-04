@@ -41,6 +41,7 @@ brew install git
 brew install tmux
 
 brew install fzf
+brew install the_silver_searcher
 
 # DEVOPS tools
 brew install ansible
