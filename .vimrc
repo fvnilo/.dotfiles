@@ -12,6 +12,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=/usr/local/opt/fzf
 
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim' " Plugin manager
 Plugin 'flazz/vim-colorschemes' " Just to have a bunch of color schemes available
 Plugin 'airblade/vim-gitgutter' " A few git wrapping things
@@ -21,7 +22,9 @@ Plugin 'fatih/vim-go' " Go support
 Plugin 'rust-lang/rust.vim' " Rust support
 Plugin 'racer-rust/vim-racer' " Racer (Rust completion) support
 Plugin 'stephpy/vim-yaml' " YAML support
-Plugin 'junegunn/fzf.vim' " Fuzzt search tool
+Plugin 'pangloss/vim-javascript' " Javascript Support
+Plugin 'moll/vim-node' " Nodejs support
+Plugin 'junegunn/fzf.vim' " Fuzzy search tool
 Plugin 'majutsushi/tagbar' " Code tags layout
 Plugin 'tpope/vim-unimpaired' " Mostly for conflict marker navigation
 Plugin 'tpope/vim-vinegar' "Used for file navigation
@@ -68,6 +71,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" Languages
 "" Rust
 set hidden
 let g:racer_cmd = "$HOME/.cargo/bin/racer"

@@ -57,6 +57,7 @@ brew install tldr
 
 # Universal Tags
 brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+brew install ctags
 
 # -------------------------------
 # Casks
