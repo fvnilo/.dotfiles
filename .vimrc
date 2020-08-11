@@ -102,7 +102,7 @@ nmap <Leader>f :Ag<CR>
 " Ctrl+n to open nerd tree
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> <plug>NERDTreeTabsToggle<CR>
 
 " Enable color syntax
 syntax on
