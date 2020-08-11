@@ -27,7 +27,8 @@ Plugin 'moll/vim-node' " Nodejs support
 Plugin 'junegunn/fzf.vim' " Fuzzy search tool
 Plugin 'majutsushi/tagbar' " Code tags layout
 Plugin 'tpope/vim-unimpaired' " Mostly for conflict marker navigation
-Plugin 'tpope/vim-vinegar' "Used for file navigation
+Plugin 'preservim/nerdtree' " File-tree Navigation 
+Plugin 'jistr/vim-nerdtree-tabs' " Support tabs within NerdTree
 
 call vundle#end()
 
@@ -96,6 +97,12 @@ let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 nmap <Leader>b :Buffers<CR>
 nmap <Leader><space> :Files<CR>
 nmap <Leader>f :Ag<CR>
+
+" Nerdtree
+" Ctrl+n to open nerd tree
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+map <C-n> :NERDTreeToggle<CR>
 
 " Enable color syntax
 syntax on
