@@ -28,6 +28,7 @@ brew install starship
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 brew install gnu-sed
+brew install ripgrep
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
