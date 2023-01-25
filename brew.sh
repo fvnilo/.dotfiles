@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+if ! command -v brew &> /dev/null
+then
+    echo "Command brew not found. Installing..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 echo "Installing brew formulae..."
 
@@ -16,6 +21,10 @@ BREW_PREFIX=$(brew --prefix)
 brew install coreutils
 ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
+# Install terminal theme
+brew install starship
+
+
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 brew install gnu-sed
@@ -23,73 +32,36 @@ brew install gnu-sed
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
+# Install most used languages toolkit
 brew install python
 brew install go
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
+brew install wget
 brew install curl
 
 # Install more recent versions of some macOS tools.
-brew install vim
 brew install grep
 brew install openssh
 
 # Install other useful binaries.
 brew install git
+brew install git-lfs
 brew install tmux
-
-brew install fzf
-brew install the_silver_searcher
+brew install neovim
 
 # DEVOPS tools
 brew install ansible
 brew install aws-cli
-brew install aws-iam-authenticator
-brew install kops
-brew install kubectx
 
 # Useful terminal tools
 brew install jq
 brew install watch
 brew install tldr
 
-# Universal Tags
-brew install --HEAD universal-ctags/universal-ctags/universal-ctags
-brew install ctags
-
-# -------------------------------
-# Casks
-# -------------------------------
-brew install cask
-
-# Dev utilities
-brew cask install docker
-
-# Browsers
-brew cask install google-chrome
-
-# Communication
-brew cask install slack
-
-# Change the user's life forever
-# God bless the best text editor on earth
-brew install vim --with-override-system-vi
-
-# vim's best friend
-brew install tmux
-
-brew install git
-brew install git-lfs
-brew install ssh-copy-id
-
-brew install docker
-brew install docker-compose
-brew install docker-machine
-
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-hack-nerd-font
 
 # Remove outdated versions from the cellar.
 brew cleanup
