@@ -63,5 +63,7 @@ brew install tldr
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
+brew install --cask rectangle
+
 # Remove outdated versions from the cellar.
 brew cleanup

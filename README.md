@@ -1,19 +1,13 @@
 # dotfiles
-> Dot files for various terminal tools
+> My personal dotfiles for various terminal tools
 
 ## Getting started
 
-		./brew.sh
-		./install.sh
+		./setup.sh
 
 ## What's included
 
-### vim
-- `install.sh` will install or upgrade [Vundle](https://github.com/VundleVim/Vundle.vim)
-- `.vimrc` includes a bunch of plugins for development
+- `neovim` configuration and plugins
+- `tmux` configuration and color scheme
+- various applications installed with `brew`
 
-### oh-my-zsh
-- [custom zsh-themes](https://github.com/nylo-andry/zsh-themes)
-
-### tmux
-- A few rebindings to make tmux's keybinding feel like `vim`s
