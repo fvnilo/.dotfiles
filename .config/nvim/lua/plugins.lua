@@ -64,6 +64,7 @@ require('lazy').setup({
           'hcl',
           'lua',
           'rust',
+          'terraform',
           'yaml',
         },
       })
