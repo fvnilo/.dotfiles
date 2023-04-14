@@ -1,7 +1,7 @@
 local ft_lsp = {
   go = "gopls",
   rust = "rust_analyzer",
-  lua = "sumneko_lua",
+  lua = "lua_ls",
   terraform = "terraformls"
 }
 
