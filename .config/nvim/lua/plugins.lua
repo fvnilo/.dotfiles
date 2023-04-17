@@ -15,11 +15,10 @@ vim.opt.rtp:prepend(lazypath)
 -- Install plugins
 require('lazy').setup({
   {
-    'folke/tokyonight.nvim',
+    'rebelot/kanagawa.nvim',
     lazy = false,
     init = function()
-      require('tokyonight').setup({ style = 'night' })
-      vim.cmd.colorscheme('tokyonight')
+      vim.cmd.colorscheme('kanagawa')
     end,
   },
   { 'echasnovski/mini.nvim',
@@ -62,7 +61,7 @@ require('lazy').setup({
           'go',
           'gomod',
           'hcl',
-          'lua',
+          -- 'lua',
           'rust',
           'terraform',
           'yaml',
@@ -84,7 +83,8 @@ require('lazy').setup({
     'neovim/nvim-lspconfig',
     dependencies = {
       'folke/neodev.nvim',
-    },    ft = require('lsp').ftypes(),
+    },
+    ft = require('lsp').ftypes(),
     config = function() require 'lsp'.setup() end,
   }
 })
