@@ -39,6 +39,8 @@ brew install go
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 brew install hashicorp/tap/terraform-ls
+brew install tflint
+brew install opa
 
 brew install wget
 brew install curl
