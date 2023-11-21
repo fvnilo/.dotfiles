@@ -1,4 +1,4 @@
-vim.opt.clipboard = 'unnamed'
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.cursorline = true
 vim.opt.expandtab = true
 vim.opt.foldlevel = 20
