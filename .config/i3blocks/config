@@ -1,3 +1,0 @@
-[time]
-command=echo "$(date +' %Y-%m-%d  %H:%M')"
-interval=30

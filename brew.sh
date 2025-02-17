@@ -25,10 +25,12 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install starship
 
 
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+# Install file utils
 brew install findutils
 brew install gnu-sed
 brew install ripgrep
+brew install stow
+brew install zsh-completions
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg

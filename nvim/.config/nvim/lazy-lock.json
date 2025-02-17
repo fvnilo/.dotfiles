@@ -1,0 +1,20 @@
+{
+  "catppuccin": { "branch": "main", "commit": "d72341852556e2dfe19f779cc682c16dd58548fc" },
+  "direnv.vim": { "branch": "master", "commit": "ab2a7e08dd630060cd81d7946739ac7442a4f269" },
+  "gitsigns.nvim": { "branch": "main", "commit": "8b00147519d6f8353867d5d0b55f587306b0cfb6" },
+  "lazy.nvim": { "branch": "main", "commit": "e5e9bf48211a13d9ee6c1077c88327c49c1ab4a0" },
+  "mini.comment": { "branch": "main", "commit": "264b8a63edd5a9a41d5361a1d52c13131c3c51a2" },
+  "mini.completion": { "branch": "main", "commit": "089f581c6bd7bca606a311a013843ad32ee6fa35" },
+  "mini.cursorword": { "branch": "main", "commit": "939ffcc8c57694608ac0896418d4b9a7c5273909" },
+  "mini.extra": { "branch": "main", "commit": "7725a82b4d9c0acdc370385b9c04bb0791017230" },
+  "mini.files": { "branch": "main", "commit": "0db8f49088bcefff23c5cb8498a6c94e46a45a8e" },
+  "mini.indentscope": { "branch": "main", "commit": "8ce41a77eed7f4121c83c67fda5e2e86af999e6d" },
+  "mini.pick": { "branch": "main", "commit": "93a9975d94b39b287183f95191431db13ae82c44" },
+  "mini.starter": { "branch": "main", "commit": "4f46dc11e1dd9f62310794121405853be8d6b13f" },
+  "mini.trailspace": { "branch": "main", "commit": "9bbbf568c06fe424dc21d2c228fa76098008a5f3" },
+  "neodev.nvim": { "branch": "main", "commit": "46aa467dca16cf3dfe27098042402066d2ae242d" },
+  "nvim-lspconfig": { "branch": "master", "commit": "7af2c37192deae28d1305ae9e68544f7fb5408e1" },
+  "nvim-treesitter": { "branch": "master", "commit": "95648f915424131ba0304989bfd618dce651e1cf" },
+  "vim-fugitive": { "branch": "master", "commit": "b068eaf1e6cbe35d1ac100d435cd7f7b74a5c87d" },
+  "vim-terraform": { "branch": "master", "commit": "8912ca1be3025a1c9fab193618f3b99517e01973" }
+}

@@ -10,15 +10,14 @@ function installUpdateTpm() {
 }
 
 function installFiles() {
-	rsync --exclude ".git/" \
-		--exclude ".gitignore" \
-		--exclude ".DS_Store" \
-		--exclude "install.sh" \
-		--exclude "brew.sh" \
-		--exclude "setup.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE" \
-		-avh --no-perms . ~;
+	for f in *; do
+		if [ -d "$f" ]; then
+			echo "Configuring $f"
+			
+			stow -D $f
+			stow $f
+		fi
+	done
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
