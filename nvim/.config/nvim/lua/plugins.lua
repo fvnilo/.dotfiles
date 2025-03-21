@@ -1,5 +1,6 @@
 require('lazy').setup({
   require('plugins.colorscheme'),
+  require('plugins.navigation'),
   require('plugins.mini'),
   require('plugins.dev'),
   require('plugins.git'),

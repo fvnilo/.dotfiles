@@ -93,33 +93,6 @@ return {
     },
   },
   {
-    "echasnovski/mini.files",
-    opts = {
-      mappings = {
-        close       = '<ESC>',
-        go_in       = '',
-        go_in_plus  = '<CR>',
-        go_out      = '-',
-        go_out_plus = 'h',
-        reset       = '<BS>',
-        reveal_cwd  = '@',
-        show_help   = 'g?',
-        synchronize = '=',
-        trim_left   = '<',
-        trim_right  = '>',
-      },
-    },
-    keys = {
-      {
-        "-",
-        function()
-          require("mini.files").open(vim.api.nvim_buf_get_name(0))
-        end,
-        desc = "Find Files",
-      },
-    },
-  },
-  {
     "echasnovski/mini.indentscope",
     opts = {
       draw = {

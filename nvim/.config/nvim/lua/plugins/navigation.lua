@@ -1,12 +1,24 @@
 return {
   {
-    'prichrd/netrw.nvim',
-    init = function()
-      require('netrw').setup()
-    end,
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
+    -- Optional dependencies
     dependencies = {
-      'nvim-tree/nvim-web-devicons',
-      'tpope/vim-vinegar',
-    }
-  },
+      { 
+        "echasnovski/mini.icons", 
+        opts = {} 
+      } 
+    },
+    lazy = false,
+    keys = {
+      {
+        "-",
+        function()
+          require("oil").open()
+        end,
+      },
+    },
+  }
 }
