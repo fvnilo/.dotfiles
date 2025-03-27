@@ -62,6 +62,11 @@ return {
         on_attach = on_attach
       })
 
+      lspconfig["ts_ls"].setup({
+        flags = lsp_flags,
+        on_attach = on_attach
+      })
+
     end
   }
 }
