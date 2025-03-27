@@ -10,10 +10,10 @@ return {
     },
     -- Optional dependencies
     dependencies = {
-      { 
-        "echasnovski/mini.icons", 
-        opts = {} 
-      } 
+      {
+        "echasnovski/mini.icons",
+        opts = {}
+      }
     },
     lazy = false,
     keys = {

@@ -5,6 +5,7 @@ require('lazy').setup({
   require('plugins.dev'),
   require('plugins.git'),
   require('plugins.treesitter'),
+  require('plugins.telescope'),
   require('plugins.lsp'),
   require('plugins.terraform'),
 })
