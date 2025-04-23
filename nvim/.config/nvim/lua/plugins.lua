@@ -3,9 +3,8 @@ require('lazy').setup({
   require('plugins.navigation'),
   require('plugins.mini'),
   require('plugins.dev'),
-  require('plugins.git'),
+  require('plugins.fzf'),
   require('plugins.treesitter'),
-  require('plugins.telescope'),
   require('plugins.lsp'),
   require('plugins.terraform'),
 })

@@ -28,6 +28,7 @@ brew install starship
 # Install file utils
 brew install findutils
 brew install gnu-sed
+brew install fzf
 brew install ripgrep
 brew install stow
 brew install zsh-completions
